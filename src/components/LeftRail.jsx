@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid } from "./Grid";
-import TypeWriter from "./Typewriter";
+import TypeWriter from "./TypeWriter";
 import { Social } from "./Social";
 import Contact from "./Contact";
 import myAvatar from "../assets/avatar.jpg";
