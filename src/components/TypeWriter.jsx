@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-export const TypeWriter = ({ dataText = [] }) => {
+const TypeWriter = ({ dataText = [] }) => {
   const [currentText, setCurrentText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
@@ -53,3 +53,5 @@ export const TypeWriter = ({ dataText = [] }) => {
     </div>
   );
 };
+
+export default TypeWriter;
