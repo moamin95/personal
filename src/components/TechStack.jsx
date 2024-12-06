@@ -1,52 +1,40 @@
 import React from "react";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiTypescript } from "react-icons/si";
-import { FaPython } from "react-icons/fa";
-import { FaReact } from "react-icons/fa";
-import { FaNodeJs } from "react-icons/fa";
-import { FaDocker } from "react-icons/fa";
+import { FaPython, FaReact, FaNodeJs, FaDocker } from "react-icons/fa";
 import { DiMysql } from "react-icons/di";
 import { SiTerraform } from "react-icons/si";
 
-const TechStack = () => {
-  const techStacks = [
-    "JavaScript",
-    "TypeScript",
-    "Python",
-    "Golang",
-    "React",
-    "Next JS",
-    "Redux",
-    "Node.js",
-    "AWS",
-    "Docker",
-    "Kubernetes",
-    "Terraform",
-    "SQL",
-  ];
-  return (
-    <>
-      <div className="_section">
-        <div className="_subheading">Tech Stack</div>
-        {/* <ul className="flex flex-wrap gap-2">
-          {techStacks.map((tech, index) => (
-            <li key={index}>
-              <TechBox tech={tech} />
-            </li>
-          ))}
-        </ul> */}
+const techItems = [
+  { icon: <IoLogoJavascript />, name: "JavaScript", hoverColor: "hover:text-yellow-500" },
+  { icon: <FaPython />, name: "Python", hoverColor: "hover:text-yellow-300" },
+  { icon: <FaReact />, name: "React", hoverColor: "hover:text-blue-400" },
+  { icon: <FaNodeJs />, name: "Node.js", hoverColor: "hover:text-green-500" },
+  { icon: <DiMysql />, name: "MySQL", hoverColor: "hover:text-blue-500" },
+  { icon: <FaDocker />, name: "Docker", hoverColor: "hover:text-blue-400" },
+  { icon: <SiTerraform />, name: "Terraform", hoverColor: "hover:text-indigo-500" },
+];
 
-        <div className="flex flex-row flex-wrap gap-4 justify-start bg-gray-900">
-          <IoLogoJavascript className="text-gray-500 w-8 h-8 hover:text-yellow-500 hover:scale-110 transition-transform" />
-          <FaPython className="text-gray-500 w-8 h-8 hover:text-yellow-300 hover:scale-110 transition-transform" />
-          <FaReact className="text-gray-500 w-8 h-8 hover:text-blue-400 hover:rotate-12 transition-transform" />
-          <FaNodeJs className="text-gray-500 w-8 h-8 hover:text-green-500 hover:scale-110 transition-transform" />
-          <DiMysql className="text-gray-500 w-10 h-10 hover:text-blue-500 hover:scale-110 transition-transform" />
-          <FaDocker className="text-gray-500 w-8 h-8 hover:text-blue-400 hover:scale-110 transition-transform" />
-          <SiTerraform className="text-gray-500 w-8 h-8 hover:text-indigo-500 hover:scale-110 transition-transform" />
-        </div>
+const TechStack = () => {
+  return (
+    <div className="_section">
+      <div className="_subheading">Tech Stack</div>
+      <div className="flex flex-row flex-wrap gap-4 lg:gap-10 justify-start bg-gray-900">
+        {techItems.map((tech, index) => (
+          <div key={index} className="relative group">
+            {/* Icon with hover effect */}
+            <div
+              className={`text-4xl text-gray-500 ${tech.hoverColor} hover:scale-110 transition-transform`}
+            >
+              {tech.icon}
+            </div>
+            {/* Tooltip */}
+            <div className="absolute bottom-14 left-1/2 transform -translate-x-1/2 bg-black text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+              {tech.name}
+            </div>
+          </div>
+        ))}
       </div>
-    </>
+    </div>
   );
 };
 

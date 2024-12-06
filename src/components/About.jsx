@@ -16,7 +16,7 @@ export const About = () => (
       >
         American Express
       </a>
-      , contributing to the uplift endeavor of the banking web platform UI.
+      , contributing to the uplift endeavor of the personal banking web platform.
     </div>
 
     <div className="_paragraph">

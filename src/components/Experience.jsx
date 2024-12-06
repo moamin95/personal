@@ -33,8 +33,6 @@ export const Experience = () => {
   return (
     <div className="_section">
       <div className="_subheading">Experience</div>
-
-      {/* Unordered List */}
       <ul className="space-y-10">
         {experiences.map((exp, index) => (
           <li key={index}>
