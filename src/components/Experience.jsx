@@ -26,8 +26,8 @@ export const Experience = () => {
       link: "https://www.cyient.com/",
       dateRange: "2019 — 2021",
       role: "Engineer",
-      description: "Advanced the development of the complex damage reporting platform using React, Redux, Express.js and . ",
-      technologies: ["React", "Redux", "Node JS", "MongoDB"],
+      description: "Advanced the development of the complex damage reporting platform using React, Redux, Express.js and SQL.",
+      technologies: ["React", "Redux", "Node JS", "SQL"],
     },
   ];
   return (
