@@ -13,10 +13,19 @@ export const Experience = () => {
       technologies: ["JavaScript", "React", "SCSS", "Storybook"],
     },
     {
+      company: "CVS Health",
+      link: "https://www.cvshealth.com/",
+      dateRange: "2022 — 2024",
+      role: "Software Engineer",
+      description:
+        "Contributed to CVS digital payment platforms, enhancing payment processing and spearheading accessiblity improvements. Furthermore, monitored and mitigated security risks as security maven.",
+      technologies: ["React", "Next JS", "Angular", "TypeScript"],
+    },
+    {
       company: "Merkle",
       link: "https://www.merkle.com",
-      dateRange: "2021 — 2024",
-      role: "Software Engineer",
+      dateRange: "2021 — 2022",
+      role: "Front End Engineer",
       description:
         "Enveloped within the entire SDLC, responsible for architecting and developing robust solutions for both frontend and backend services. Also contributed to containerization and CI/CD pipelines.",
       technologies: ["AWS", "React", "Express", "Docker", "MySQL"],
