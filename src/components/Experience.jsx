@@ -25,7 +25,7 @@ export const Experience = () => {
       company: "Merkle",
       link: "https://www.merkle.com",
       dateRange: "2021 — 2024",
-      role: "Front End Engineer",
+      role: "Full Stack Engineer",
       description:
         "Enveloped within the entire SDLC, responsible for architecting and developing robust solutions for both frontend and backend services. Also contributed to containerization and CI/CD pipelines.",
       technologies: ["AWS", "React", "Express", "Docker", "MySQL"],
