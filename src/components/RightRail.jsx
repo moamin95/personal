@@ -12,7 +12,7 @@ export const RightRail = () => {
         <About />
         <Experience />
         <TechStack />
-        <ResumeDownload />
+        {/* <ResumeDownload /> */}
         <Footer />
       </div>
     </div>

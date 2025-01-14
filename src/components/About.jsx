@@ -4,7 +4,7 @@ export const About = () => (
   <div className="_section">
     <div className="_subheading">About</div>
     <div className="_paragraph">
-      I am a front end engineer passionate about design and reliability. My
+      I am a software engineer passionate about design and reliability. My
       experience in full stack development enables me to architect solutions from
       a holistic perspective.
     </div>

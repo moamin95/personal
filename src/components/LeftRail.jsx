@@ -19,7 +19,7 @@ export const LeftRail = () => {
         />
         <div className="flex flex-col text-slate-50">
           <TypeWriter dataText={titles} />
-          <p className="_subheading">Front End Engineer</p>
+          <p className="_subheading">Software Engineer</p>
         </div>
         <p className="_blurb">
           I build robust and scalable web applications. Let's connect and create
